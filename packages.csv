@@ -1,0 +1,44 @@
+name,status,comment
+tidyverse,1,essentials
+data.table,1,essentials
+devtools,1,essentials
+BiocManager,1,essentials
+rgdal,1,essentials
+Rcpp,1,R Markdown
+base64enc,1,R Markdown
+digest,1,R Markdown
+evaluate,1,R Markdown
+glue,1,R Markdown
+highr,1,R Markdown
+htmltools,1,R Markdown
+jsonlite,1,R Markdown
+knitr,1,R Markdown
+magrittr,1,R Markdown
+markdown,1,R Markdown
+mime,1,R Markdown
+rmarkdown,1,R Markdown
+rprojroot,1,R Markdown
+stringi,1,R Markdown
+stringr,1,R Markdown
+tinytex,1,R Markdown
+xfun,1,R Markdown
+yaml,1,R Markdown
+raster,1,remote sensing
+ncdf4,1,remote sensing
+hdf5r,1,remote sensing
+leaflet,1,frequently used
+request,1,frequently used
+plotly,1,dataviz
+ggpubr,1,dataviz
+sf,1,UEP-0236
+tmap,1,UEP-0236
+factoextra,1,UEP-0236
+afex,1,PSY-0109
+BayesFactor,1,PSY-0109
+compute.es,1,PSY-0109
+dabestr,1,PSY-0109
+effects,1,PSY-0109
+effsize,1,PSY-0109
+psych,1,PSY-0109
+pwr,1,PSY-0109
+yarrr,1,PSY-0109
