@@ -1,44 +1,62 @@
 name,status,comment
-tidyverse,1,essentials
+afex,1,PSY-0109
+base64enc,1,rmarkdown
+BayesFactor,1,PSY-0109
+BiocManager,1,essentials
+compute.es,1,PSY-0109
+countrycode,1,common
+dabestr,1,PSY-0109
 data.table,1,essentials
 devtools,1,essentials
-BiocManager,1,essentials
-rgdal,1,essentials
-Rcpp,1,R Markdown
-base64enc,1,R Markdown
-digest,1,R Markdown
-evaluate,1,R Markdown
-glue,1,R Markdown
-highr,1,R Markdown
-htmltools,1,R Markdown
-jsonlite,1,R Markdown
-knitr,1,R Markdown
-magrittr,1,R Markdown
-markdown,1,R Markdown
-mime,1,R Markdown
-rmarkdown,1,R Markdown
-rprojroot,1,R Markdown
-stringi,1,R Markdown
-stringr,1,R Markdown
-tinytex,1,R Markdown
-xfun,1,R Markdown
-yaml,1,R Markdown
-raster,1,remote sensing
-ncdf4,1,remote sensing
-hdf5r,1,remote sensing
-leaflet,1,frequently used
-request,1,frequently used
-plotly,1,dataviz
-ggpubr,1,dataviz
-sf,1,UEP-0236
-tmap,1,UEP-0236
-factoextra,1,UEP-0236
-afex,1,PSY-0109
-BayesFactor,1,PSY-0109
-compute.es,1,PSY-0109
-dabestr,1,PSY-0109
+digest,1,rmarkdown
+doParallel,1,parallel
 effects,1,PSY-0109
 effsize,1,PSY-0109
+evaluate,1,rmarkdown
+factoextra,1,UEP-0236
+fastmap,1,rmarkdown
+foreach,1,parallel
+gganimate,1,dataviz
+ggpubr,1,dataviz
+gifski,1,dataviz
+glue,1,rmarkdown
+haven,1,survey
+hdf5r,1,rs
+highr,1,rmarkdown
+htmltools,1,rmarkdown
+janitor,1,essentials
+jquerylib,1,rmarkdown
+jsonlite,1,rmarkdown
+jtools,1,survey
+knitr,1,rmarkdown
+leaflet,1,common
+librarian,1,essentials
+magrittr,1,rmarkdown
+markdown,1,rmarkdown
+mime,1,rmarkdown
+ncdf4,1,rs
+parallel,1,parallel
+plotly,1,dataviz
 psych,1,PSY-0109
 pwr,1,PSY-0109
+raster,1,rs
+Rcpp,1,rmarkdown
+request,1,common
+rgdal,1,essentials
+rlang,1,rmarkdown
+rmarkdown,1,rmarkdown
+rprojroot,1,rmarkdown
+sf,1,UEP-0236
+sp,1,UEP-0236
+stars,1,rs
+stringi,1,rmarkdown
+stringr,1,rmarkdown
+survey,1,survey
+terra,1,common
+tidyverse,1,essentials
+tinytex,1,rmarkdown
+tmap,1,UEP-0236
+transformr,1,dataviz
+xfun,1,rmarkdown
+yaml,1,rmarkdown
 yarrr,1,PSY-0109

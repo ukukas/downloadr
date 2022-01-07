@@ -1,42 +1,41 @@
 name,description,status
-Bayesian,Bayesian Inference,2
+Bayesian,Bayesian Inference,1
 ChemPhys,Chemometrics and Computational Physics,1
 ClinicalTrials,"Clinical Trial Design, Monitoring, and Analysis",1
 Cluster,Cluster Analysis & Finite Mixture Models,1
 Databases,Databases with R,1
 DifferentialEquations,Differential Equations,1
 Distributions,Probability Distributions,1
-Econometrics,Econometrics,2
-Environmetrics,Analysis of Ecological and Environmental Data,2
+Econometrics,Econometrics,1
+Environmetrics,Analysis of Ecological and Environmental Data,1
 ExperimentalDesign,Design of Experiments (DoE) & Analysis of Experimental Data,1
 ExtremeValue,Extreme Value Analysis,1
 Finance,Empirical Finance,1
 FunctionalData,Functional Data Analysis,1
 Genetics,Statistical Genetics,1
-Graphics,Graphic Displays & Dynamic Graphics & Graphic Devices & Visualization,1
-HighPerformanceComputing,High-Performance and Parallel Computing with R,2
+GraphicalModels,Graphical Models,1
+HighPerformanceComputing,High-Performance and Parallel Computing with R,1
 Hydrology,Hydrological Data and Modeling,1
-MachineLearning,Machine Learning & Statistical Learning,2
-MedicalImaging,Medical Image Analysis,2
+MachineLearning,Machine Learning & Statistical Learning,1
+MedicalImaging,Medical Image Analysis,1
 MetaAnalysis,Meta-Analysis,1
 MissingData,Missing Data,1
 ModelDeployment,Model Deployment with R,1
 Multivariate,Multivariate Statistics,1
-NaturalLanguageProcessing,Natural Language Processing,2
+NaturalLanguageProcessing,Natural Language Processing,1
 NumericalMathematics,Numerical Mathematics,1
-OfficialStatistics,Official Statistics & Survey Methodology,2
+OfficialStatistics,Official Statistics & Survey Statistics,1
 Optimization,Optimization and Mathematical Programming,1
 Pharmacokinetics,Analysis of Pharmacokinetic Data,1
 Phylogenetics,"Phylogenetics, Especially Comparative Methods",1
-Psychometrics,Psychometric Models and Methods,2
-ReproducibleResearch,Reproducible Research,2
+Psychometrics,Psychometric Models and Methods,1
+ReproducibleResearch,Reproducible Research,1
 Robust,Robust Statistical Methods,1
 SocialSciences,Statistics for the Social Sciences,1
-Spatial,Analysis of Spatial Data,2
-SpatioTemporal,Handling and Analyzing Spatio-Temporal Data,2
+Spatial,Analysis of Spatial Data,1
+SpatioTemporal,Handling and Analyzing Spatio-Temporal Data,1
 Survival,Survival Analysis,1
-TeachingStatistics,Teaching Statistics,2
-TimeSeries,Time Series Analysis,2
+TeachingStatistics,Teaching Statistics,1
+TimeSeries,Time Series Analysis,1
 Tracking,Processing and Analysis of Tracking Data,1
 WebTechnologies,Web Technologies and Services,1
-gR,gRaphical Models in R,1
