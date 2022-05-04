@@ -24,6 +24,7 @@ haven,1,survey
 hdf5r,1,geo
 highr,1,rmarkdown
 htmltools,1,rmarkdown
+httr,1,common
 janitor,1,essentials
 jquerylib,1,rmarkdown
 jsonlite,1,rmarkdown
@@ -34,6 +35,7 @@ librarian,1,essentials
 magrittr,1,rmarkdown
 markdown,1,rmarkdown
 mime,1,rmarkdown
+multidplyr,1,parallel
 ncdf4,1,geo
 parallel,1,parallel
 plotly,1,dataviz
@@ -44,6 +46,7 @@ Rcpp,1,rmarkdown
 request,1,common
 rgdal,1,essentials
 rlang,1,rmarkdown
+rlas,1,geo
 rmarkdown,1,rmarkdown
 rprojroot,1,rmarkdown
 sf,1,geo
