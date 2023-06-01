@@ -1,5 +1,6 @@
 name,status,comment
 afex,1,psych
+apaTables,1,psych
 base64enc,1,rmarkdown
 BayesFactor,1,psych
 BiocManager,1,essentials
@@ -12,6 +13,7 @@ digest,1,rmarkdown
 doParallel,1,parallel
 effects,1,psych
 effsize,1,psych
+epiDisplay,1,psych
 evaluate,1,rmarkdown
 factoextra,1,geo
 fastmap,1,rmarkdown
@@ -26,6 +28,7 @@ highr,1,rmarkdown
 htmltools,1,rmarkdown
 httr,1,common
 janitor,1,essentials
+jmv,1,essentials
 jquerylib,1,rmarkdown
 jsonlite,1,rmarkdown
 jtools,1,survey
@@ -37,6 +40,7 @@ markdown,1,rmarkdown
 mime,1,rmarkdown
 multidplyr,1,parallel
 ncdf4,1,geo
+papaja,1,psych
 parallel,1,parallel
 plotly,1,dataviz
 psych,1,psych
@@ -45,10 +49,12 @@ raster,1,geo
 Rcpp,1,rmarkdown
 request,1,common
 rgdal,1,essentials
+rio,1,common
 rlang,1,rmarkdown
 rlas,1,geo
 rmarkdown,1,rmarkdown
 rprojroot,1,rmarkdown
+sem,1,psych
 sf,1,geo
 sp,1,geo
 stars,1,geo
