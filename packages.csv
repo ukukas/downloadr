@@ -7,6 +7,7 @@ bayestestR,1,envs
 BiocManager,1,essentials
 bookdown,1,envs
 clam,1,envs
+clipr,1,rstudio
 compute.es,1,psych
 countrycode,1,common
 dabestr,1,psych
@@ -68,6 +69,7 @@ jquerylib,1,rmarkdown
 jsonlite,1,rmarkdown
 jtools,1,survey
 knitr,1,rmarkdown
+languageserver,1,vscode
 latticeExtra,1,envs
 leaflet,1,common
 leaflet.extras,1,envs
@@ -75,11 +77,13 @@ leafpm,1,envs
 leafpop,1,envs
 lemon,1,envs
 librarian,1,essentials
+lintr,1,rstudio
 magrittr,1,rmarkdown
 mapedit,1,envs
 mapview,1,envs
 markdown,1,rmarkdown
 mime,1,rmarkdown
+miniui,1,rstudio
 multidplyr,1,parallel
 ncdf4,1,geo
 nimbleCarbon,1,envs
@@ -116,6 +120,7 @@ RNetCDF,1,envs
 rnoaa,1,envs
 rosm,1,envs
 rprojroot,1,rmarkdown
+rstudioapi,1,rstudio
 satellite,1,envs
 sem,1,psych
 sen2r,1,envs
@@ -141,6 +146,7 @@ spgwr,1,envs
 stars,1,geo
 stringi,1,rmarkdown
 stringr,1,rmarkdown
+styler,1,rstudio
 survey,1,survey
 svgViewR,1,envs
 terra,1,common
