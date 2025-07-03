@@ -2,7 +2,7 @@ name,description,status
 ActuarialScience,Actuarial Science,1
 Agriculture,Agricultural Science,1
 Bayesian,Bayesian Inference,1
-CausalInference,Causal Inference,1
+CausalInference,Causal Inference,0
 ChemPhys,Chemometrics and Computational Physics,1
 ClinicalTrials,"Clinical Trial Design, Monitoring, and Analysis",1
 Cluster,Cluster Analysis & Finite Mixture Models,1
