@@ -88,7 +88,7 @@ desired_packages <- read_csv(PACKAGES_CSV) %>%
 
 # get dependencies and add to download list if needed
 
-all_pacakges <- package_dependencies(desired_packages,
+all_packages <- package_dependencies(desired_packages,
   recursive = TRUE,
   db = available.packages(repos = REPOS),
   which = DEPTYPES
@@ -102,7 +102,7 @@ all_pacakges <- package_dependencies(desired_packages,
 # remove packages included in base R
 
 base_packages <- rownames(installed.packages(priority = "base"))
-final_pacakges <- discard(all_pacakges, function(x) x %in% base_packages)
+final_packages <- discard(all_packages, function(x) x %in% base_packages)
 
 
 # check if download directory exists, create if needed
@@ -113,7 +113,7 @@ if (!dir.exists(DESTDIR)) {
 
 # download required packages and output list of downloaded packages
 
-packagelist <- download.packages(final_pacakges, DESTDIR,
+packagelist <- download.packages(final_packages, DESTDIR,
   repos = REPOS,
   type = PKGTYPE
 ) %>% data.frame()
