@@ -120,6 +120,7 @@ RNetCDF,1,envs
 rnoaa,1,envs
 rosm,1,envs
 rprojroot,1,rmarkdown
+rstac,1,geo
 rstudioapi,1,rstudio
 satellite,1,envs
 sem,1,psych
