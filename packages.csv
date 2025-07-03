@@ -106,8 +106,6 @@ Rcpp,1,rmarkdown
 REdaS,1,envs
 remotes,1,envs
 request,1,common
-rgdal,1,essentials
-rgeos,1,envs
 rintcal,1,envs
 rio,1,common
 rioja,1,envs
@@ -117,14 +115,12 @@ rmarkdown,1,rmarkdown
 rnaturalearth,1,envs
 rnaturalearthdata,1,envs
 RNetCDF,1,envs
-rnoaa,1,envs
 rosm,1,envs
 rprojroot,1,rmarkdown
 rstac,1,geo
 rstudioapi,1,rstudio
 satellite,1,envs
 sem,1,psych
-sen2r,1,envs
 servr,1,envs
 sf,1,geo
 sfhotspot,1,envs
