@@ -15,6 +15,7 @@ data.table,1,essentials
 datawizard,1,envs
 devtools,1,essentials
 digest,1,rmarkdown
+doFuture,1,parallel
 doParallel,1,parallel
 doSNOW,1,envs
 duckdb,1,common
@@ -31,6 +32,9 @@ fastmatrix,1,envs
 filehash,1,envs
 fipio,1,envs
 foreach,1,parallel
+furrr,1,parallel
+future,1,parallel
+future.apply,1,parallel
 GCD,1,envs
 gdalUtilities,1,envs
 geojson,1,envs
