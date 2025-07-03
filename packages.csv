@@ -83,7 +83,7 @@ mapedit,1,envs
 mapview,1,envs
 markdown,1,rmarkdown
 mime,1,rmarkdown
-miniui,1,rstudio
+miniUI,1,rstudio
 multidplyr,1,parallel
 ncdf4,1,geo
 nimbleCarbon,1,envs
