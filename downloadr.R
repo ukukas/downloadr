@@ -103,6 +103,15 @@ repo_packages <- base::rownames(repo_packages)
 available_packages <- base::union(repo_packages, base_packages)
 
 
+# warn if a package in PACKAGES_CSV is already covered by an enabled task view
+
+base::union(tv_packages, base::unlist(package_deps[tv_packages])) %>%
+  base::intersect(csv_packages) %>%
+  purrr::walk(\(pkg) warning(base::sprintf(
+    "'%s' in %s is already provided by an enabled task view", pkg, PACKAGES_CSV
+  ), call. = FALSE))
+
+
 # drop any desired package with dependencies not available via REPOS
 
 desired_packages <- base::Filter(\(pkg) {

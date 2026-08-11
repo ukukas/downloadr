@@ -11,6 +11,7 @@ Functionality:
 2. Unless already downloaded, downloads all packages specified in packages.csv
 3. Checks for and downloads any dependencies required by downloaded packages
 4. Drops and warns against any desired package with unavailable dependencies
+5. Warns if a requested package is already included in a downloaded task view
 
 Dependencies: readr, dplyr, purrr, ctv, tools
 
