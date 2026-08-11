@@ -1,8 +1,9 @@
 name,description,status
 ActuarialScience,Actuarial Science,1
 Agriculture,Agricultural Science,1
+AnomalyDetection,Anomaly Detection,1
 Bayesian,Bayesian Inference,1
-CausalInference,Causal Inference,0
+CausalInference,Causal Inference,1
 ChemPhys,Chemometrics and Computational Physics,1
 ClinicalTrials,"Clinical Trial Design, Monitoring, and Analysis",1
 Cluster,Cluster Analysis & Finite Mixture Models,1
@@ -18,7 +19,7 @@ ExperimentalDesign,Design of Experiments (DoE) & Analysis of Experimental Data,1
 ExtremeValue,Extreme Value Analysis,1
 Finance,Empirical Finance,1
 FunctionalData,Functional Data Analysis,1
-GraphicalModels,Graphical Models,0
+GraphicalModels,Graphical Models,1
 HighPerformanceComputing,High-Performance and Parallel Computing with R,1
 Hydrology,Hydrological Data and Modeling,1
 MachineLearning,Machine Learning & Statistical Learning,1
@@ -31,7 +32,7 @@ NaturalLanguageProcessing,Natural Language Processing,1
 NetworkAnalysis,Network Analysis,1
 NumericalMathematics,Numerical Mathematics,1
 OfficialStatistics,Official Statistics & Survey Statistics,1
-Omics,"Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics",0
+Omics,"Genomics, Proteomics, Metabolomics, Transcriptomics, and Other Omics",1
 Optimization,Optimization and Mathematical Programming,1
 Paleontology,Paleontology,1
 Pharmacokinetics,Analysis of Pharmacokinetic Data,1
