@@ -2,6 +2,7 @@ name,status,category
 arrow,1,data
 bookdown,1,rmarkdown
 compute.es,1,reporting
+corrplot,1,viz
 countrycode,1,data
 crew,1,parallel
 dabestr,1,reporting
@@ -25,6 +26,7 @@ GSODR,1,geo
 gtsummary,1,reporting
 haven,1,survey
 hdf5r,1,geo
+here,1,essentials
 hoardr,1,geo
 inlabru,1,geo
 janitor,1,essentials
@@ -41,6 +43,7 @@ miniUI,1,rstudio
 modelsummary,1,reporting
 multidplyr,1,parallel
 ncdf4,1,geo
+openxlsx,1,data
 osmdata,1,geo
 papaja,1,rmarkdown
 predicts,1,geo
@@ -63,12 +66,14 @@ sjPlot,1,reporting
 spatialEco,1,geo
 SpatialPack,1,geo
 spgwr,1,geo
+srvyr,1,survey
 styler,1,rstudio
 survey,1,survey
 table1,1,reporting
 targets,1,parallel
 tictoc,1,essentials
 tidygeocoder,1,geo
+tidymodels,1,essentials
 tidyverse,1,essentials
 tmap,1,geo
 yarrr,1,teaching
