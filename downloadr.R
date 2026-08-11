@@ -90,22 +90,45 @@ desired_packages <- readr::read_csv(PACKAGES_CSV, show_col_types = FALSE) %>%
   base::unique()
 
 
+# drop any desired package with dependencies not available via REPOS
+
+repo_packages <- utils::available.packages(repos = REPOS)
+
+package_deps <- tools::package_dependencies(
+  packages = desired_packages,
+  db = repo_packages,
+  which = DEPTYPES,
+  recursive = TRUE
+)
+
+base_packages <- base::rownames(utils::installed.packages(priority = "base"))
+repo_packages <- base::rownames(repo_packages)
+available_packages <- base::c(repo_packages, base_packages)
+
+
+desired_packages <- base::Filter(function(pkg) {
+  closure <- base::c(pkg, package_deps[[pkg]])
+  missing <- base::setdiff(closure, available_packages)
+  if (length(missing) > 0) {
+    warning(base::sprintf(
+      "dropping '%s': requires unavailable package(s): %s",
+      pkg, paste(missing, collapse = ", ")
+    ), call. = FALSE)
+    return(FALSE)
+  }
+  TRUE
+}, desired_packages)
+
+
 # get dependencies and add to download list if needed
 
-all_packages <- package_dependencies(desired_packages,
-  recursive = TRUE,
-  db = available.packages(repos = REPOS),
-  which = DEPTYPES
-) %>%
-  purrr::flatten() %>%
-  base::unique() %>%
+all_packages <- purrr::flatten(package_deps[desired_packages]) %>%
   base::c(desired_packages) %>%
   base::unique()
 
 
 # remove packages included in base R
 
-base_packages <- base::rownames(utils::installed.packages(priority = "base"))
 final_packages <- purrr::discard(all_packages, function(x) x %in% base_packages)
 
 

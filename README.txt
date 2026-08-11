@@ -10,6 +10,7 @@ Functionality:
     CRAN Task View as specified in taskviews.csv
 2. Unless already downloaded, downloads all packages specified in packages.csv
 3. Checks for and downloads any dependencies required by downloaded packages
+4. Drops and warns against any desired package with unavailable dependencies
 
 Dependencies: readr, dplyr, purrr, ctv, tools
 
