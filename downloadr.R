@@ -23,10 +23,10 @@ PKGTYPE <- "win.binary"
 
 # types of dependencies to check for
 # subset of c("Depends", "Imports", "LinkingTo", "Suggests", "Enhances")
-DEPTYPES <- c("Depends", "Imports", "LinkingTo")
+DEPTYPES <- base::c("Depends", "Imports", "LinkingTo")
 
 # URLs of the repositories to use
-REPOS <- c("https://cloud.r-project.org/")
+REPOS <- base::c("https://cloud.r-project.org/")
 
 # CSV of CRAN Task Views to download
 TASKVIEWS_CSV <- "./taskviews.csv"
@@ -39,32 +39,35 @@ PACKAGES_CSV <- "./packages.csv"
 
 # ensure required packages are installed and loaded
 
-deps <- c("readr", "dplyr", "purrr", "ctv", "tools")
+deps <- base::c("readr", "dplyr", "purrr", "ctv", "tools")
 
 checkDep <- function(dep) {
   if (!require(dep, character.only = TRUE)) {
-    install.packages(dep)
+    base::install.packages(dep)
     library(dep, character.only = TRUE)
   }
 }
 
-invisible(lapply(deps, checkDep))
+base::invisible(base::lapply(deps, checkDep))
 
 
 ## MAIN
 
 # get package list from task views
 
-tv_status <- read_csv(TASKVIEWS_CSV)
-tv_list <- available.views()
+tv_status <- readr::read_csv(TASKVIEWS_CSV, show_col_types = FALSE)
+tv_list <- ctv::available.views(repos = REPOS)
 
 processTV <- function(tv) {
   status <- tv_status %>%
-    filter(name == tv$name) %>%
-    pull(status) %>%
-    first()
+    dplyr::filter(name == tv$name) %>%
+    dplyr::pull(status) %>%
+    dplyr::first()
   if (status == 1) {
-    return(tv$packagelist %>% filter(core == TRUE) %>% pull(name))
+    tv$packagelist %>%
+      dplyr::filter(core == TRUE) %>%
+      dplyr::pull(name) %>%
+      return()
   } else if (status == 2) {
     return(tv$packagelist$name)
   } else {
@@ -72,18 +75,19 @@ processTV <- function(tv) {
   }
 }
 
-tv_packages <- lapply(tv_list, processTV) %>%
-  flatten() %>%
-  unique()
+tv_packages <- base::lapply(tv_list, processTV) %>%
+  purrr::flatten() %>%
+  base::unlist() %>%
+  base::unique()
 
 
 # add packages from specified package list if needed
 
-desired_packages <- read_csv(PACKAGES_CSV) %>%
-  filter(status == 1) %>%
-  pull(name) %>%
-  c(tv_packages) %>%
-  unique()
+desired_packages <- readr::read_csv(PACKAGES_CSV, show_col_types = FALSE) %>%
+  dplyr::filter(status == 1) %>%
+  dplyr::pull(name) %>%
+  base::c(tv_packages) %>%
+  base::unique()
 
 
 # get dependencies and add to download list if needed
@@ -93,29 +97,29 @@ all_packages <- package_dependencies(desired_packages,
   db = available.packages(repos = REPOS),
   which = DEPTYPES
 ) %>%
-  flatten() %>%
-  unique() %>%
-  c(desired_packages) %>%
-  unique()
+  purrr::flatten() %>%
+  base::unique() %>%
+  base::c(desired_packages) %>%
+  base::unique()
 
 
 # remove packages included in base R
 
-base_packages <- rownames(installed.packages(priority = "base"))
-final_packages <- discard(all_packages, function(x) x %in% base_packages)
+base_packages <- base::rownames(utils::installed.packages(priority = "base"))
+final_packages <- purrr::discard(all_packages, function(x) x %in% base_packages)
 
 
 # check if download directory exists, create if needed
 
-if (!dir.exists(DESTDIR)) {
-  dir.create(DESTDIR)
+if (!base::dir.exists(DESTDIR)) {
+  base::dir.create(DESTDIR)
 }
 
 # download required packages and output list of downloaded packages
 
-packagelist <- download.packages(final_packages, DESTDIR,
+packagelist <- utils::download.packages(final_packages, DESTDIR,
   repos = REPOS,
   type = PKGTYPE
-) %>% data.frame()
-colnames(packagelist) <- c("package", "file")
-write_csv(packagelist, DOWNLOADS_CSV)
+) %>% base::data.frame()
+base::colnames(packagelist) <- c("package", "file")
+readr::write_csv(packagelist, DOWNLOADS_CSV)
